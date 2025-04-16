@@ -69,11 +69,5 @@ jobs:
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/medical-chatbot:latest
 
-      # Step 5: Deploy to your server (Modify based on your hosting solution)
-      - name: Deploy to Server
-        run: |
-          # Add deployment steps here. For example:
-          # SSH into your server and pull the image
-          # ssh user@server "docker pull ${{ secrets.DOCKER_USERNAME }}/fastapi-app:latest && docker run -d -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/fastapi-app:latest"
-          echo "Deploying to the server..."
+      
 
